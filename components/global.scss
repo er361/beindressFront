@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300italic,500italic,300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+@import "./variables.scss";
+
+.skidkiWrapper {
+  width: 100%;
+  background-color: $skidkiColor;
+  height: 802px;;
+}

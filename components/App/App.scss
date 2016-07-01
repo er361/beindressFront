@@ -1,0 +1,37 @@
+@import "../variables.scss";
+.imgOverlayTextLeft {
+  margin-top: $marginTopHeader;
+  margin-left: $marginLeftHeader;
+  background-color: transparent;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  color: #515151;
+  text-transform: uppercase;
+  p:nth-child(1){
+    line-height: 29px;
+    font-size: 24px;
+  }
+  p:nth-child(2){
+    line-height: 14px;
+  	font-size: 12px;
+  }
+}
+.imgOverlayTextRight {
+  margin-right: $marginRightHeader;
+  margin-top: $marginTopHeader;
+  background-color: transparent;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: right;
+  p:nth-child(1){
+
+    font-size: 26px;
+    line-height: 31px;
+  }
+  p:nth-child(2) {
+    text-align: right;
+    line-height: 22px;
+  	font-weight: 400;
+  }
+}
