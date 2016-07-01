@@ -6,7 +6,7 @@ export default class BlockSkidki extends React.Component {
 		console.log(this.props);
 		return (
 			<div className='imageContainer'>
-				{/*<img src={this.props.src} className={this.props.imgClass + ' imgBg'}/>*/}
+				<img src={this.props.src} className={this.props.imgClass + ' imgBg'}/>
 				<p className='text'>{this.props.text}</p>
 				<a href="#" className="myButton">
 					Смотреть каталог

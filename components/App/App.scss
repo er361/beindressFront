@@ -1,5 +1,8 @@
 @import "../variables.scss";
+
 .imgOverlayTextLeft {
+  position: absolute;
+  z-index: 1;
   margin-top: $marginTopHeader;
   margin-left: $marginLeftHeader;
   background-color: transparent;
@@ -17,13 +20,14 @@
   }
 }
 .imgOverlayTextRight {
-  margin-right: $marginRightHeader;
+  position: absolute;
+  z-index: 1;
+  right: 429px;
   margin-top: $marginTopHeader;
   background-color: transparent;
   font-family: roboto, sans-serif;
   font-weight: 700;
   color: #FFFFFF;
-  text-align: right;
   p:nth-child(1){
 
     font-size: 26px;

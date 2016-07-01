@@ -1,6 +1,13 @@
 @import "../variables.scss";
 .imageContainer {
+  .imgBg {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
   .text {
+    position: absolute;
+    z-index: 1;
     margin-left: $marginLeftHeader;
   	width: 588px;
   	min-height: 289px;
@@ -14,6 +21,7 @@
     text-transform: uppercase;
   }
   .textBottom {
+    z-index: 1;
     position: absolute;
     top: 598px;
     margin-left: $marginLeftHeader;
@@ -23,6 +31,7 @@
     line-height: 19px;
   }
   .myButton {
+    z-index: 1;
     position:absolute;
     margin-left: $marginLeftHeader;
   	background-color:transparent;

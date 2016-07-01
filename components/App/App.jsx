@@ -11,11 +11,11 @@ export default class App extends React.Component {
     return (
       <div className="skidkiWrapper">
         <div className="container">
-          <div className='pull-left  imgOverlayTextLeft'>
+          <div className='imgOverlayTextLeft'>
             <p>beindress</p>
             <p>интернет-магазин женских платьев</p>
           </div>
-          <div className='pull-right imgOverlayTextRight'>
+          <div className='imgOverlayTextRight'>
             <p>8 (499) 390 82 43</p>
             <p>
               м.Пушкинская <br/>
