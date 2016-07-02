@@ -13,6 +13,10 @@ module.exports = [
     test: /\.scss$/,
     loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
   },
+	// {
+	//     test: /(\.scss|\.css)$/,
+	//     loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
+  // }
 	{
 		test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
 		loader: "file"

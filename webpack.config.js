@@ -3,6 +3,8 @@ var path = require('path');
 var loaders = require('./webpack.loaders');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
+// var fluxxor = require('fluxxor');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: [
