@@ -28,7 +28,8 @@ module.exports = {
 		contentBase: "./public",
 			noInfo: true, //  --no-info option
 			hot: true,
-			inline: true
+			inline: true,
+			historyApiFallback: true
 		},
 	plugins: [
 		new webpack.ProvidePlugin({

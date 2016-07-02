@@ -1,8 +1,10 @@
 // require("./node_modules/bootstrap/dist/css/bootstrap.min.css")
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from './components/App/App.jsx';
-import Text from './components/Text.jsx';
+import {Router, browserHistory} from 'react-router';
+import Routes from './routes/Route.jsx';
 
-ReactDOM.render(<Text />, document.querySelector("#myApp"));
-// ReactDOM.render(<BlockSkidki />, document.querySelector("#app2"));
+ReactDOM.render(
+  <Router history={browserHistory} routes={Routes} />
+  ,
+  document.getElementById('myApp'));

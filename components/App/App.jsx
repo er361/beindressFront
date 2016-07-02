@@ -7,27 +7,9 @@ import BlockSkidki from '../BlockSkidki/BlockSkidki.jsx';
 
 export default class App extends React.Component {
   render() {
-    var text = "изысканные вечерние платья с неприличной скидкой 50%";
     return (
-      <div className="skidkiWrapper">
-        <div className="container">
-          <div className='imgOverlayTextLeft'>
-            <p>beindress</p>
-            <p>интернет-магазин женских платьев</p>
-          </div>
-          <div className='imgOverlayTextRight'>
-            <p>8 (499) 390 82 43</p>
-            <p>
-              м.Пушкинская <br/>
-              Леонтьевский пер. 5 <br/>
-              пн-сб с 9-17 00
-            </p>
-          </div>
-          <BlockSkidki
-            src= {skidkiImg1}
-            imgClass='img-responsive'
-            text={text} />
-        </div>
+      <div>
+        {this.props.children}
       </div>
     );
   }
