@@ -26,6 +26,7 @@
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
     "bootstrap": "3.3.5",
+    "classnames": "^2.2.5",
     "extract-text-webpack-plugin": "^1.0.1",
     "fluxxor": "^1.7.3",
     "install": "^0.8.1",

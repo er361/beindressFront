@@ -4,14 +4,21 @@ import App from '../components/App/App.jsx';
 import Admin from '../components/Admin/Admin.jsx';
 import Content from '../components/Content/Content.jsx';
 import Login from '../components/Login/Login.jsx';
+import auth from '../components/Login/auth.js';
 
-var authCheck = (nextState, transition) => {
-  // console.log(nextState);
-  // console.log(transition);
+function requireAuth(nextState, replace) {
+  if (!auth.loggedIn()) {
+    replace({
+      pathname: '/login',
+      state: { nextPathname: nextState.location.pathname }
+    })
+  }
 }
+
 export default (
-  <Route path='/' component={App} onEnter={authCheck}>
+  <Route path='/' component={App}>
     <IndexRoute component={Content} />
-    <Route path='admin' component={Login}/>
+    <Route path='login' component={Login}/>
+    <Route path='admin' component={Admin} onEnter={requireAuth}/>
   </Route>
 )

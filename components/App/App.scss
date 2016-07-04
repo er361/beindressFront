@@ -1,5 +1,23 @@
 @import "../variables.scss";
 
+.none {
+  // display: none;
+  button {
+    border: 1px solid #000;
+  }
+}
+.Link {
+  text-decoration: none !important;
+  color: white !important;
+  &:hover {
+    text-decoration: none !important;
+    color: white !important;
+  }
+  &:visited {
+    text-decoration: none !important;
+    color: white !important;
+  }
+}
 .imgOverlayTextLeft {
   position: absolute;
   z-index: 1;
