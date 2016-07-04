@@ -1,0 +1,24 @@
+.menuLink {
+  text-decoration: none !important;
+  color: black !important;
+  &:hover {
+    text-decoration: none !important;
+    color: black !important;
+  }
+  &:visited {
+    text-decoration: none !important;
+    color: black !important;
+  }
+}
+.menuHeader {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  color: white;
+  font-family: roboto, sans-serif;
+	font-weight: 400;
+}
+.leftNav {
+  height: 100%;
+}
